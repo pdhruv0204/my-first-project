@@ -39,8 +39,8 @@ public class LoginSteps extends BaseClass {
 	@When("User enters invalid username and password")
 	public void User_enters_invalid_username_and_password() throws InterruptedException {
 		
-		lp.enterUsername("wrong_username");
-		lp.enterPassword("wrong_password");
+		lp.enterUsername("incorrect_username");
+		lp.enterPassword("incorrect_password");
 		Thread.sleep(2000);
 		lp.clickOnLoginBtn();
 		Thread.sleep(2000);
